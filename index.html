@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link id="theme-style" rel='stylesheet' type='text/css' media='screen' href=''>
 </head>
 <body>
 
@@ -39,10 +40,10 @@
                     <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
                     </div>
                     <p id="settings-note">Theme settings will be saved for <br>your next visit</p>
                 </div>
@@ -121,7 +122,7 @@
                         <div class="project-preview">
                             <h6 class="project-title">Clear and Level Logging</h6>
                             <p class="project-intro">Company site for customer acquisition and description of services offered. Completed using React, Gatsby, HTML, and CSS</p>
-                            <a href="#">Visit Site</a>
+                            <a target="_blank" href="https://clearandlevellogging.netlify.app/">Visit Site</a>
                         </div>
                     </div>
                 </div>
@@ -131,7 +132,7 @@
                         <div class="project-preview">
                             <h6 class="project-title">Last Hope</h6>
                             <p class="project-intro">Roll-based space game that involves exploring randomly generated planets and encountering different scenarios. Completed using React, JavaScript, and CSS.</p>
-                            <a href="#">Visit Site</a>
+                            <a target="_blank" href="https://lit-depths-90375.herokuapp.com/">Visit Site</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +142,7 @@
                         <div class="project-preview">
                             <h6 class="project-title">Jhemm Fighters</h6>
                             <p class="project-intro">Turn-based, two-player fighting game built in vanilla HTML, CSS, and JavaScript.</p>
-                            <a href="#">Visit Site</a>
+                            <a target="_blank" href="https://team-jhemm-fighters.github.io/jhemm-fighters/">Visit Site</a>
                         </div>
                     </div>
                 </div>
@@ -150,25 +151,16 @@
     </section>
     <section class="s2">
         <div class="main-container">
-            <h3 style="text-align: center;">Contact Me!</h3>
+            <h3 style="text-align: center;">Please contact me with one of the following ways!</h3>
+                <div class="contact-wrapper">
+                    <a target="_blank" href="https://www.linkedin.com/in/erik-ford-business/"><button class="contact-button">Find me on LinkedIn!</button></a>
 
-            <form id="contact-form">
-                <label>Name</label>
-                <input class="input-field" type="text" name="name">
-
-                <label>Subject</label>
-                <input class="input-field" type="text" name="subject">
-
-                <label>Email</label>
-                <input class="input-field" type="text" name="email">
-
-                <label>Message</label>
-                <textarea class="input-field" name="message"></textarea>
-
-                <input id="submit-btn" type="submit" value="send">
-            </form>
+                    <a target="_blank" href="mailto:erik.ford.business@gmail.com"><button class="contact-button"> Please email me!</button></a>
+                </div>
         </div>
     </section>
+
+    <script type="text/javascript" src="colorchange.js"></script>
     
 </body>
 </html>

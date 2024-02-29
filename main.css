@@ -67,6 +67,7 @@ p, li, span, label, input, textarea{
 .main-container{
     width: 1200px;
     margin: 0 auto;
+
 }
 
 .greeting-wrapper{
@@ -277,6 +278,8 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 0px
     display: flex;
     justify-content: space-evenly;
     background-color: var(--previewShadow);
+    padding-right: 25px;
+    
 }
 
 .project-wrapper{
